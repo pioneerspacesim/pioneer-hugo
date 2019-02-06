@@ -3,7 +3,7 @@ test: downloadlinks changelog releasejs
 release: downloadlinks changelog releasejs
 	hugo
 deploy: release
-	rsync -avz --delete docs/ pioneer:/var/www/pioneerspacesim.net/
+	rsync -avz --delete --exclude forum --exclude codedocs docs/ pioneer:/var/www/pioneerspacesim.net/
 downloadlinks:
 	python make-downloadlinks.py > themes/pioneer/layouts/shortcodes/downloadlinks.html
 changelog:
