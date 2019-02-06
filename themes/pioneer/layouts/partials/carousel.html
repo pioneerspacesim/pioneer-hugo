@@ -1,0 +1,101 @@
+{{ $baseURL := .Site.BaseURL }}
+<ul class="carousel">
+    <li id="slide0" class="slide">
+	<video id="trailer" class="video-js vjs-fluid" controls preload="auto" data-setup="{}">
+	    <source src="{{$baseURL}}/trailer.mp4" type='video/mp4'>
+	    <p class="vjs-no-js">
+		To view this video please enable JavaScript, and consider upgrading to a web browser that
+		<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+	    </p>
+	</video>
+    </li>
+    {{ $folder := "/static/carousel" }}
+    {{ $files := readDir $folder }}
+    {{ $id := 1 }}
+    {{ range $index, $file := $files }}
+    {{ $id = add $index 1 }}
+    <li id="slide{{$id}}" class="slide"><img src="{{$baseURL}}/carousel/{{ .Name }}"/></li>
+    {{ end }}
+    <!-- <li id="slide2" class="slide"><img src="{{$baseURL}}/carousel/ss3.png"/></li>
+	 <li id="slide3" class="slide"><img src="{{$baseURL}}/carousel/ss4.png"/></li>
+	 <li id="slide4" class="slide"><img src="{{$baseURL}}/carousel/ss5.png"/></li>
+	 <li id="slide5" class="slide"><img src="{{$baseURL}}/carousel/ss6.png"/></li>
+	 <li id="slide6" class="slide"><img src="{{$baseURL}}/carousel/ss7.png"/></li>
+	 <li id="slide7" class="slide"><img src="{{$baseURL}}/carousel/ss8.png"/></li>
+	 <li id="slide8" class="slide"><img src="{{$baseURL}}/carousel/ss9.png"/></li> -->
+</ul>
+<div class="carousel-controls">
+    <a id="btn-slide0" class="btn" href="#slide0"></a>
+    {{ $folder := "/static/carousel" }}
+    {{ $files := readDir $folder }}
+    {{ $id := 1 }}
+    {{ range $index, $file := $files }}
+    {{ $id = add $index 1 }}
+    <a id="btn-slide{{$id}}" class="btn" href="#slide{{$id}}"></a>
+    {{ end }}
+</div>
+
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script type="text/javascript" src="{{$baseURL}}/css/slick/slick.min.js"></script> -->
+<!-- <script type="text/javascript" src="{{$baseURL}}/jcarousel-0.3.5/jquery.jcarousel.min.js"></script> -->
+
+<script type="text/javascript" src="{{$baseURL}}/js/video.min.js"></script>
+<!-- <script>
+     (function($) {
+     $(function() {
+     $('.jcarousel').jcarousel();
+
+     $('.jcarousel-control-prev')
+     .on('jcarouselcontrol:active', function() {
+     $(this).removeClass('inactive');
+     })
+     .on('jcarouselcontrol:inactive', function() {
+     $(this).addClass('inactive');
+     })
+     .jcarouselControl({
+     target: '-=1'
+     });
+
+     $('.jcarousel-control-next')
+     .on('jcarouselcontrol:active', function() {
+     $(this).removeClass('inactive');
+     })
+     .on('jcarouselcontrol:inactive', function() {
+     $(this).addClass('inactive');
+     })
+     .jcarouselControl({
+     target: '+=1'
+     });
+
+     $('.jcarousel-pagination')
+     .on('jcarouselpagination:active', 'a', function() {
+     $(this).addClass('active');
+     })
+     .on('jcarouselpagination:inactive', 'a', function() {
+     $(this).removeClass('active');
+     })
+     .jcarouselPagination();
+     });
+     })(jQuery);
+     </script> -->
+<script type="text/javascript">
+ document.addEventListener("DOMContentLoaded", function() {
+     if(window.location.hash === "") {
+	 window.location.hash = '#slide0';
+	 document.getElementById("btn-slide0").className += " active";
+     } else {
+	 document.getElementById("btn-" + window.location.hash.substring(1)).className += " active";
+     }
+     var els = document.getElementsByClassName("btn");
+     for(i=0;i<els.length;i++) {
+	 els[i].addEventListener("click",function(x) {
+	     for(i=0;i<els.length;i++) {
+		 els[i].className = "btn";
+	     };
+	     x.target.className += " active";
+	 });
+     }
+ }
+ );
+</script>

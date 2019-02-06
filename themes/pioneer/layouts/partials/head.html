@@ -1,0 +1,27 @@
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+		{{ $baseURL := .Site.BaseURL }}
+		<link rel="stylesheet" type="text/css" href="{{$baseURL}}/css/pioneer.css" />
+		<link rel="stylesheet" type="text/css" href="{{$baseURL}}/css/carousel.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="{{$baseURL}}/css/slick/slick.css"/> -->
+		<!-- Add the new slick-theme.css if you want the default styling -->
+		<!-- <link rel="stylesheet" type="text/css" href="{{$baseURL}}/css/slick/slick-theme.css"/> -->
+		<link rel="stylesheet" type="text/css" href="{{$baseURL}}/css/video-js.min.css"/>
+	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/uno.min.css" />
+				 <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/lightGallery.css" /> -->
+    <!-- Icons -->
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+				 <link rel="shortcut icon" href="/favicon.ico"> -->
+    <!-- RSS -->
+    <!-- <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" /> -->
+    <!-- Script -->
+    <!-- <script src="{{ .Site.BaseURL }}/js/jquery.min.js"></script>
+				 <script src="{{ .Site.BaseURL }}/js/main.min.js">
+				 </script> -->
+</head>

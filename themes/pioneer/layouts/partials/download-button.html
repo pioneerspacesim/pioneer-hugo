@@ -1,0 +1,34 @@
+{{ $baseURL := .Site.BaseURL }}
+<div id='download'>
+  <a id='download-button' href='{{ ref . "download.md" }}'>
+    <div id='download-content'>
+      <h3>Pioneer</h3>
+      <h4>Free download<span id='download-platform'></span></h4>
+      <p><!-- <span id='download-version'></span><br/> --><span id='download-date'></span><span id='download-size'></span></p>
+    </div>
+  </a>
+  <div id='download-links'>
+      <a href="{{ ref . "download.md" }}">Changelog</a> &middot; <a href="{{ ref . "download.md" }}">Other systems</a>
+  </div>
+</div>
+{{partial "releases.html" .}}
+<script type="text/javascript">
+ //<!CDATA[
+ (function () {
+
+     var platform = navigator.platform.substr(0,3);
+     if (navigator.userAgent.match(/x86_64/))
+	 platform += "64";
+
+     var release = releases[platform];
+     if (!release)
+         return;
+
+     document.getElementById("download-platform").innerHTML = " for " + release[0];
+//     document.getElementById("download-version").innerHTML  = "Version: " + release[1];
+     document.getElementById("download-button").href        = release[2];
+     document.getElementById("download-date").innerHTML     = release[3];
+     document.getElementById("download-size").innerHTML     = " &middot; " + release[4];
+ })();
+ //]]>
+</script>

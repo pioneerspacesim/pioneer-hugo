@@ -1,0 +1,44 @@
+baseURL="https://pioneerspacesim.net/"
+title = "Pioneer"
+theme="pioneer"
+publishDir="docs"
+
+[[menu.main]]
+name="Home"
+url="/"
+weight=1
+
+[[menu.main]]
+name="Wiki"
+url="https://pioneerspacesim.net/wiki"
+weight=10
+
+[[menu.main]]
+name="FAQ"
+url="https://pioneerwiki.com/wiki/FAQ"
+weight=11
+
+[[menu.main]]
+name="FAQ"
+url="https://pioneerwiki.com/wiki/FAQ"
+weight=11
+
+[[menu.main]]
+name="Dev forum"
+url="https://pioneerspacesim.net/forum"
+weight=12
+
+[[menu.main]]
+name="Issue tracker"
+url="https://pioneerspacesim.net/issues"
+weight=13
+
+[[menu.main]]
+name="IRC"
+url="http://webchat.freenode.net/?channels=pioneer"
+weight=14
+
+[[menu.main]]
+name="Community forum"
+url="http://spacesimcentral.com/forum/categories/pioneer/"
+weight=15

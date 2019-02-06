@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+		{{ partial "head.html" . }}
+		<body>
+				{{ partial "menu.html" . }}
+				{{ partial "banner.html" . }}
+
+				{{range where .Data.Pages "Title" "home"}}
+				<div class="main">
+						<article class="content">
+								<div class="box">
+										{{.Content }}
+										{{ partial "carousel.html" . }}
+								</div>
+						</article>
+						<aside class="support-twitter">
+								{{ partial "download-button.html" .}}
+								{{ partial "support.html" .}}
+								{{ partial "twitter.html" .}}
+						</aside>
+				</div>
+				{{ end }}
+
+				{{ partial "footer.html" .}}
+    </body>
+</html>

@@ -1,0 +1,50 @@
+.carousel {
+		margin: 0 auto;
+		/* position: relative; */
+		list-style: none;
+		padding: 0;
+		/* width: 700px; */
+		/* height: 450px; */
+}
+
+.carousel .slide {
+		/* position: absolute; */
+		text-align: center;
+		display: none;
+}
+.slide img {
+		max-width: 800px;
+		height: auto;
+		width: 100%;
+		/* width: 700px; */
+		/* height: 437px; */
+}
+.video-js {
+		max-width: 800px;
+}
+.carousel .slide:target {
+		display: block;
+}
+
+.carousel-controls {
+		padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+ 
+.carousel-controls .btn {
+    display: inline-block;
+    background-color: #000;
+    border-radius: 100%;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin: 0px 5px;
+    opacity: 0.5;
+}
+.carousel-controls .btn.active {
+		opacity: 0.8;
+}
+.carousel-controls .btn:hover {
+    opacity: 1;
+}

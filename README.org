@@ -1,0 +1,21 @@
+#+AUTHOR: ecraven
+
+* pioneer-hugo
+This is the homepage at https://pioneerspacesim.net
+
+* Development
+The page is a static site, rendered by [[https://gohugo.io][Hugo]].
+
+Check the =Makefile= for details.
+
+Valid targets are:
+- =test= :: The default target, create dynamic data, then run hugo as a test server.
+- =release= :: Create dynamic data, then run hugo to generate the site in =/docs=.
+- =deploy= :: Run =release=, then deploy the site to the web server. This assumes you have write access under the ssh name =pioneer=.
+- =downloadlinks= :: Generate the shortcode for download links (used on the download page).
+- =changelog= :: Generate the shortcode for the changelog (used on the download page).
+- =releasejs= :: Generate the partial for the release javascript (used on the main home page).
+
+For starters, you might want to check the files in =/content/page/=, which contain the normal page content. The theme is defined in =/themes/pioneer/=.
+
+To add images to the carousel, just drop them in =/static/carousel=, they will be picked up automatically.

@@ -1,0 +1,198 @@
+body {
+		color: white;
+		max-width: 1440px;
+		margin: 0 auto;
+		background: black no-repeat center center/cover fixed url('/background.jpg');
+		display: flex;
+		height: 100vh;
+		flex-direction: column;
+}
+
+a {
+		text-decoration: none;
+		color: white;
+}
+#footer {
+		margin: 0;
+		padding: 10px 0;
+		background-color: rgba(0,0,0,0.5);
+		text-align: center;
+		font-family: Titillium Web, sans serif;
+		font-weight: bold;
+		flex: 0 0 auto;
+}
+h1,h2,h3,h4,h5 {
+				font-family: Orbitron, sans serif;
+}
+h2 {
+		font-size: 120%;
+}
+#banner {
+		padding: 10px;
+		margin: 0;
+		font-weight: bold;
+		flex: 0 0 auto;
+}
+
+#banner h1 {
+		font-size: 400%;
+		text-shadow: 2px 2px 2px #000;
+		margin: 0;
+}
+
+#banner h2 {
+		font-size: 250%;
+		text-shadow: 2px 2px 2px #000;
+		margin: 0;
+}
+.box {
+		padding: 10px;
+		background-color: rgba(255,255,255,0.5);
+		color: #000;
+		padding-bottom: 2em;
+}
+.languages {
+		float: right;
+		margin-right: 1em;
+}
+#topmenu {
+		background-color: rgba(0,0,0,0.5);
+		padding: 7px;
+		margin: 0;
+		font-family: Titillium Web, sans serif;
+		font-weight: bold;
+		flex: 0 0 auto;
+}
+.content {
+		flex: 70%;
+		margin-bottom: 1em;
+}
+.content a {
+		color: black;
+		text-decoration: underline;
+}
+.main {
+		flex: 1 0 auto;
+		display: flex;
+}
+.support-twitter {
+		padding: 0 10px;
+		flex: 0 0 20%;
+}
+#topmenu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+}
+#topmenu li {
+		display: inline-block;
+}
+#topmenu li a {
+		display: block;
+		padding: 0 0.7em;
+		text-align: center;
+		line-height: 3em;
+		text-decoration: none;
+}
+#topmenu li:hover a {
+		background: #19c589;
+}
+
+#topmenu a.active {
+		background-color: rgba(255,255,255,0.5);
+		color: black;
+}
+#topmenu .show-menu {
+		display: none;
+}
+#topmenu input[type=checkbox] {
+		display: none;
+}
+
+@media screen and (max-width: 768px) {
+		#topmenu li {
+				margin-bottom: 1px;
+		}
+		#topmenu ul li, #topmenu li a {
+				width: 100%;
+		}
+		#topmenu .show-menu {
+				display: block;
+				font-size: 250%;
+		}
+		#menu {
+				display: none;
+		}
+		.main {
+				flex-direction: column;
+		}
+		.support-twitter {
+				flex: 100%;
+		}
+		.content {
+				flex: 100%;
+		}
+}
+
+#topmenu input[type=checkbox]:checked ~ #menu {
+		display: block;
+}
+.support h3, .twitter h3 {
+		font-family: Orbitron, sans serif;
+		font-size: 200%;
+}
+
+.paypal-button {
+		display: inline;
+}
+#donate-flattr {
+		display: inline-block;
+		float: right;
+}
+
+/* from the original homepage */
+div#download {
+    float: right;
+}
+#download h3, #download h4, #download p {
+		margin: 0;
+		padding: 0;
+		line-height: 1.3em;
+}
+a#download-button {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #8a2300;
+    margin-left: 64px;
+    padding-left: 64px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000;
+}
+
+div#download-content {
+    display: block;
+    height: 108px;
+    margin-left: -128px;
+    padding: 10px 10px 10px 138px;
+    background: url(/badge.png) 0 0 no-repeat;
+    font-family: "Titillium Web", sans-serif;
+}
+
+div#download-content > * {
+    padding-bottom: 5px;
+}
+
+div#download-content > * {
+    text-shadow: 0 -2px 0 rgba(0,0,0,0.25);
+}
+
+div#download-content > h3, div#download-content > h4 {
+    font-family: "Titillium Web", sans-serif;
+    text-shadow: 2px 2px 2px #000;
+}
+
+div#download-links {
+    margin: 10px;
+    text-align: right;
+}
+/* end from original homepage*/

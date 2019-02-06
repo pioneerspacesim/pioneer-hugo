@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+		{{ partial "head.html" . }}
+		<body>
+				{{ partial "menu.html" . }}
+
+				{{ partial "banner.html" . }}
+				<div class="main">
+				<article class="content">
+						<div class="box">
+								{{ .Content }}
+						</div>
+				</article>
+				</div>
+				{{ partial "footer.html" .}}
+    </body>
+</html>
