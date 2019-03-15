@@ -3,7 +3,7 @@ date: "2017-05-20T16:16:23+02:00"
 title: "home"
 ---
 
-**Pioneer is a space adventure game set in our galaxy at the turn of the 31st century.**
+**Pioneer is a space adventure game set in our galaxy at the turn of the 33rd century.**
 
 The game is open-ended, and you are free to eke out whatever kind of space-faring existence you can think of. Look for fame or fortune by exploring the millions of star systems. Turn to a life of crime as a pirate, smuggler or bounty hunter. Forge and break alliances with the various factions fighting for power, freedom or self-determination. The universe is whatever you make of it.
 
