@@ -1,6 +1,6 @@
 ---
-date: "2017-05-20T16:16:23+02:00"
-title: "home"
+date: "2020-03-04T07:35:00+02:00"
+title: "Home"
 ---
 
 **Pioneer is a space adventure game set in our galaxy at the turn of the 33rd century.**
