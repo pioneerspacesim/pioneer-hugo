@@ -16,4 +16,5 @@ with urllib.request.urlopen('https://api.github.com/repos/pioneerspacesim/pionee
         size = "{0:.2f}".format(asset['size'] / 1024 / 1024)
         print(f'<li><a href="{url}">{name}</a> ({date} · {size} MB)</li>')
     print('</ul>')
+    print(f'<p>{body}</p>')
 
