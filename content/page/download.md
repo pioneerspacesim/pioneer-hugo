@@ -12,7 +12,7 @@ We regularly produce builds of Pioneer to make it easy for players to try out re
 
 ## Binary builds
 
-Pre-built copies of the game are available for the following platforms.
+Pre-built copies of the game are available for the following platforms. (See [GitHub releases](https://github.com/pioneerspacesim/pioneer/releases) for older releases)
 
 {{< downloadlinks >}}
 

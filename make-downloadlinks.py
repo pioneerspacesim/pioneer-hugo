@@ -7,7 +7,7 @@ with urllib.request.urlopen('https://api.github.com/repos/pioneerspacesim/pionee
     assets = latest['assets']
     title = latest['name']
     body = markdown.markdown(latest['body'])
-    print(f'<h4>Release: {title}</h4><p>{body}</p>')
+    print(f'<h4>Release: {title}</h4>')
     print('<ul>')
     for asset in assets:
         name = asset['name']
