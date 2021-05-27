@@ -35,7 +35,7 @@ weight=13
 
 [[menu.main]]
 name="IRC"
-url="http://webchat.freenode.net/?channels=pioneer"
+url="https://kiwiirc.com/nextclient/irc.libera.chat/?channel=#pioneer"
 weight=14
 
 [[menu.main]]
