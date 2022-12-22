@@ -47,7 +47,9 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Generate Dependencies
+      - name: Install Python dependencies
+        run: "pip install markdown"
+      - name: Generate site data
         run: "make downloadlinks changelog releasejs"
       - name: Build with Hugo
         env:
