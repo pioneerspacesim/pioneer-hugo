@@ -42,3 +42,8 @@ weight=14
 name="Community forum"
 url="http://spacesimcentral.com/community/pioneer/"
 weight=15
+
+[[menu.main]]
+name="Community Discord"
+url="https://discord.gg/Xzwh5ZPFcK"
+weight=16
