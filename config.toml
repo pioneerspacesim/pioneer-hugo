@@ -30,7 +30,7 @@ weight=12
 
 [[menu.main]]
 name="Issue tracker"
-url="https://pioneerspacesim.net/issues"
+url="https://github.com/pioneerspacesim/pioneer/issues"
 weight=13
 
 [[menu.main]]
