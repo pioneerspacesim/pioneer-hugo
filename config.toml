@@ -10,17 +10,12 @@ weight=1
 
 [[menu.main]]
 name="Wiki"
-url="https://pioneerwiki.com"
+url="https://wiki.pioneerspacesim.net"
 weight=10
 
 [[menu.main]]
 name="FAQ"
-url="https://pioneerwiki.com/wiki/FAQ"
-weight=11
-
-[[menu.main]]
-name="FAQ"
-url="https://pioneerwiki.com/wiki/FAQ"
+url="https://wiki.pioneerspacesim.net/wiki/FAQ"
 weight=11
 
 [[menu.main]]

@@ -18,7 +18,7 @@ Pioneer needs work in pretty much every area right now. There's something for ev
 - Story development (including starsystems)
 - Testing, filing bugs and complaining
 - Documentation (eg getting started, how to fly, writing missions, etc)
-- For more ideas, please visit our [wiki page](http://pioneerwiki.com/wiki/How_you_can_contribute) on how you can contribute
+- For more ideas, please visit our [wiki page](https://wiki.pioneerspacesim.net/wiki/How_you_can_contribute) on how you can contribute
 
 The code is available over at GitHub. Feel free to grab it and dive in. If you want to help but have no idea where to start, take a look at the issue tracker; there's lots of low-hanging fruit in there if you like some instant gratification (and your name in the credits!).
 
@@ -26,4 +26,4 @@ If you're still not sure, feel free to ask the forum or in the [IRC channel](htt
 
 And just think - if you're a contributor, then nobody can stop you when you decide to name a star after yourself. Its only fair :)
 
-To get started, read the [development section](http://pioneerwiki.com/) on the wiki.
+To get started, read the [development documentation](https://dev.pioneerspacesim.net/).
