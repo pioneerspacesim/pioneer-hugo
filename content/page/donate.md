@@ -10,9 +10,12 @@ menu:
 
 Pioneer is developed by a group of volunteers from all over the world, giving up their spare time and energy to try and make something great.
 
-So if you enjoy playing Pioneer and would like to support its continued development, please consider donating, no donation is too small. [PayPal](https://www.paypal.com/) is our preferred donation provider, but if these don't work for you please [let us know](mailto:karlfogel@gmail.com?subject=Pioneer%20donation) and we can make other arrangements.
+So if you enjoy playing Pioneer and would like to support its continued development, please consider donating, no donation is too small. If below options do not work for you please [let us know](mailto:karlfogel@gmail.com?subject=Pioneer%20donation) and we can make other arrangements.
+ - [PayPal](https://www.paypal.com/)
+ - BTC: `bc1q38e55z0agw0xrjngvp4qanap8ntuc6v7dpdsc4`
+ - ETC: `0x0FD599C29e2a4E43f3B300c26DAD00995AB171F8`
 
-The money you donate goes will go towards web hosting (this website, development forum and wiki).
+Your donation goes towards web hosting (this website, development forum and wiki). Any remaining funds will be saved for future goal of being able to pay for a full time developer.
 
 If you have donated in the past and would like to be acknowledged here, [let us know](mailto:karlfogel@gmail.com?subject=Pioneer%20donation).
 
