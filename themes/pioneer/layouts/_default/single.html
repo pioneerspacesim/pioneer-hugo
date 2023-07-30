@@ -11,6 +11,11 @@
 								{{ .Content }}
 						</div>
 				</article>
+				{{ if eq .Title "Donate" }}
+				<aside class="support-twitter">
+						{{ partial "support.html" .}}
+				</aside>
+				{{ end }}
 				</div>
 				{{ partial "footer.html" .}}
     </body>
