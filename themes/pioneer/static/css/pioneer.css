@@ -8,6 +8,12 @@ body {
 		flex-direction: column;
 }
 
+@media screen and (max-width: 1600px) {
+	body {
+		max-width: 1280px;
+	}
+}
+
 a {
 		text-decoration: none;
 		color: white;
@@ -47,7 +53,7 @@ h2 {
 }
 .box {
 		padding: 10px;
-		background-color: rgba(255,255,255,0.5);
+		background-color: rgba(192, 192, 192, 0.85);
 		color: #000;
 		padding-bottom: 2em;
 }
@@ -196,3 +202,9 @@ div#download-links {
     text-align: right;
 }
 /* end from original homepage*/
+
+.content .release-notes img {
+	max-width: 100%;
+	width: 100%;
+	display: block;
+}
