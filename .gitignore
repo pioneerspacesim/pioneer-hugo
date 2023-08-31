@@ -1,10 +1,5 @@
 # Hugo lockfile
 .hugo_build.lock
 
-# auto-generated partials from Github content
-themes/pioneer/layouts/partials/releases.html
-themes/pioneer/layouts/shortcodes/changelog.html
-themes/pioneer/layouts/shortcodes/downloadlinks.html
-
 # compiled output directory
 docs/
