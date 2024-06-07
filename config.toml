@@ -42,3 +42,7 @@ weight=15
 name="Community Discord"
 url="https://discord.gg/Xzwh5ZPFcK"
 weight=16
+
+[Params.umami]
+websiteId = "6a556223-cd99-4fe0-b309-166d8f234052"
+jsLocation = "https://analytics.pioneerspacesim.net/script.js"
