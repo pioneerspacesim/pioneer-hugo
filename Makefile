@@ -1,5 +1,5 @@
 test: downloadlinks changelog releasejs
-	hugo server -w -v --bind 0.0.0.0
+	hugo server -w --logLevel info --bind 0.0.0.0
 release: downloadlinks changelog releasejs
 	hugo
 deploy: release
