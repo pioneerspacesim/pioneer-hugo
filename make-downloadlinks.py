@@ -14,7 +14,13 @@ with urllib.request.urlopen('https://api.github.com/repos/pioneerspacesim/pionee
         url = asset['browser_download_url']
         date = asset['updated_at'][0:10]
         size = "{0:.2f}".format(asset['size'] / 1024 / 1024)
-        print(f'<li><a href="{url}">{name}</a> ({date} · {size} MB)</li>')
+
+        label = "unknown"
+        for dist in {"linux", "win", "app"}:
+            if dist in name.lower():
+                label = dist
+
+        print(f'<li><a data-umami-event="Downloaded {date} ({label})" href="{url}">{name}</a> ({date} · {size} MB)</li>')
     print('</ul>')
     print(f'<p>{body}</p>')
 
