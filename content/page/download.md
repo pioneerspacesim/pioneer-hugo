@@ -24,4 +24,4 @@ See the [compiling guide](https://github.com/pioneerspacesim/pioneer/blob/master
 
 ## Changelog
 
-{{< changelog >}}
+For list of full development history, see [Changelog.txt](https://github.com/pioneerspacesim/pioneer/blob/master/Changelog.txt)
