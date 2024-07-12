@@ -1,3 +1,7 @@
+"""
+Generate changelog for latest month.
+"""
+
 #!/usr/bin/python
 import collections
 import re
@@ -7,6 +11,7 @@ firstline = True
 changelog = urllib.request.urlopen('https://raw.githubusercontent.com/pioneerspacesim/pioneer/master/Changelog.txt').read().decode('utf-8')
 for line in changelog.splitlines():
     if firstline:
+        # Get title: "Month YYYY"
         lines.append((0, line.strip()))
         firstline = False
     elif len(line) == 0:
