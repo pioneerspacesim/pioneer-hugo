@@ -18,6 +18,9 @@ with urllib.request.urlopen('https://api.github.com/repos/pioneerspacesim/pionee
         elif "linux" in name:
             tag = "Lin64"
             name = "Linux 64"
+        elif "App" in name:
+            tag = "App"
+            name = "App Image Linux 64"
         else:
             tag = "Unk"
             name = "Unknown"
