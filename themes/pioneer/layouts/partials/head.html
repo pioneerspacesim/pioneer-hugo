@@ -12,6 +12,13 @@
 		<link rel="stylesheet" type="text/css" href="{{$baseURL}}/css/video-js.min.css"/>
 	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Orbitron">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+
+    <!-- Mastodon feed embed -->
+    {{ if .IsHome }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@idotj/mastodon-embed-timeline@4.4.2/dist/mastodon-timeline.min.css" integrity="sha256-1UGgxsonaMCfOEnVOL89aMKSo3GEAmaRP0ISbsWa6lU=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@idotj/mastodon-embed-timeline@4.4.2/dist/mastodon-timeline.umd.js" integrity="sha256-E6WPG6iq+qQIzvu3HPJJxoAeRdum5siq13x4ITjyxu8=" crossorigin="anonymous"></script>
+    {{ end }}
+
     <!-- CSS -->
     <!-- <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/uno.min.css" />
 				 <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/lightGallery.css" /> -->
