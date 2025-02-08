@@ -11,7 +11,7 @@ menu:
 Pioneer is developed by a group of volunteers from all over the world, giving up their spare time and energy to try and make something great.
 
 So if you enjoy playing Pioneer and would like to support its continued development, please consider donating, no donation is too small. If below options do not work for you please [let us know](mailto:karlfogel@gmail.com?subject=Pioneer%20donation) and we can make other arrangements.
- - [PayPal](https://paypal.me/pioneerspacesim?country.x=SE&locale.x=en_US)
+ - [PayPal](https://www.paypal.com/donate/?hosted_button_id=UPNFQCFJ9WSY6)
  - BTC: `bc1q38e55z0agw0xrjngvp4qanap8ntuc6v7dpdsc4`
  - ETH: `0x0FD599C29e2a4E43f3B300c26DAD00995AB171F8`
 
