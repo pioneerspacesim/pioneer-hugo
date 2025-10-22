@@ -1,0 +1,19 @@
+<section class="mastodon-wrapper">
+	<script>
+	window.addEventListener("load", () => {
+		const timeline = new MastodonTimeline.Init({
+			instanceUrl: "https://mstdn.games",
+			timelineType: "profile",
+			userId: "109791326094338766",
+			profileName: "@pioneerspacesim",
+      hideReplies: true,
+		});
+	});
+	</script>
+
+	<div id="mt-container" class="mt-container">
+		<div class="mt-body" role="feed">
+			<div class="mt-loading-spinner"></div>
+		</div>
+	</div>
+</section>
