@@ -27,12 +27,26 @@ a {
 		font-weight: bold;
 		flex: 0 0 auto;
 }
-h1,h2,h3,h4,h5 {
-				font-family: Orbitron, sans serif;
+
+/* Basic font setup */
+h1 {
+	font-size: 2.5rem;
 }
 h2 {
-		font-size: 120%;
+	font-size: 2rem;
 }
+h3 {
+	font-size: 1.5rem;
+}
+h4 {
+	font-size: 1rem;
+}
+h1,h2,h3,h4,h5 {
+	font-family: Orbitron, sans serif;
+	margin: 0.5em 0;
+}
+
+
 #banner {
 		padding: 10px;
 		margin: 0;
@@ -84,6 +98,16 @@ h2 {
 .support-twitter {
 		padding: 0 10px;
 		flex: 0 0 20%;
+		align-self: stretch;
+		margin-bottom: 1em;
+
+		display: flex;
+		flex-direction: column;
+}
+.support-twitter .mastodon-wrapper {
+	flex: 1 0 1px; /* flex-basis of 1px required to trigger overflow */
+	overflow-y: hidden;
+	font-size: 0.9rem;
 }
 #topmenu ul {
 		list-style-type: none;
@@ -142,10 +166,6 @@ h2 {
 
 #topmenu input[type=checkbox]:checked ~ #menu {
 		display: block;
-}
-.support h3, .twitter h3 {
-		font-family: Orbitron, sans serif;
-		font-size: 200%;
 }
 
 .paypal-button {
